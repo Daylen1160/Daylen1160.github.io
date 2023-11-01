@@ -1,0 +1,73 @@
+<!DOCTYPE html><!--What file type is this-->
+<html lang="en"> <!--What this is written in, what language-->
+  <head> <!--Metadata container (just contains info aboutp portion of website)-->
+    <title>Home</title><!--Title of document, not shown-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <!--External CSS-->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+    <!--Internal CSS-->
+    <style>
+      h2 {color: #2b55f0;} 
+    </style>
+  </head>  
+  <body><!--What's actually displayed-->
+    <a href="../Master-Webpage/masterindex.html">Back to Master Webpage</a>
+    <h1>Welcome :D</h1>
+    <h2>Smaller title</h2><!--Header 2, smaller than Header 1-->
+    
+    <p style = "text-decoration: blue wavy underline"><!--Inline CSS-->
+      Just a webpage made with <a href="https://glitch.com">Glitch</a>
+    </p><!--Paragraph (text)-->
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    
+    <ol><!--Ordered list-->
+      <li>First element in a list</li><!--Indicates an element in a list-->
+      <li>Here's the second</li>
+    </ol>
+    
+    <ol style = "list-style-type: upper-roman"><!--Changes style of list-->
+      <li>Here's another ordered list, but starting with a Roman numeral</li>
+      <li>Who remembers the Roman numeral for 100</li>
+    </ol>
+    
+    <ul><!--Unordered list-->
+      <li>Here's a basic unordered list</li>
+      <li>Looks like my notes from 6th grade in history</li>
+    </ul>
+    
+    <ul style = "list-style-type: square"><!--Changes style of list-->
+      <li>This is an unordered list, much better than ordered list</li><!--Indicates an element in a list-->
+      <li>Bullet points :O</li>
+    </ul>
+    
+    
+    <ul><!--Unordered list-->
+      <li>This is another unordered list</li><!--Indicates an element in a list-->
+      <li>Here's how you can make more bullet points but tabbed<!--Not finished, because list also contains
+      nested elements-->
+        <ul><!--Creates nested list-->
+          <li>But this one is nested</li>
+          <li>Here's another nested bullet point</li>
+        </ul>
+      </li><!--Closes this list and it's nested bullet points-->
+      <li>You can have bullet points of the bullet points
+        <ul>
+          <li>Convenient for descriptions</li>
+          <li>Or specifying different versions of something</li>
+        </ul>
+      </li>
+    </ul>  
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html><!--What file type is this-->
+<html lang="en"> <!--What this is written in, what language-->
+  <head> <!--Metadata container (just contains info aboutp portion of website)-->
+    <title>Home</title><!--Title of document, not shown-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <!--External CSS-->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+    <!--Internal CSS-->
+    <style>
+      h2 {color: #73f094;} 
+    </style>
+  </head>  
+  <body><!--What's actually displayed-->
+    <a href="../Master-Webpage/masterindex.html">Back to Master Webpage</a>
+    <h1>Welcome :D</h1>
+    <a href="#About">About Section</a><br/><!--Internal link-->
+    <h2>Student starter pack:</h2><!--Header 2, smaller than Header 1-->
+    
+    <p><!--Paragraph (text)--></p>
+      <ul> <!--External links-->
+        <!--Each external link also has a title, which can be seen when hovered over-->
+        <!--The "_blank" target indicates a new tab being opened, only the calculator will open in same page-->
+        <li><a href="https://deanza.instructure.com/" title = "DeAnza Canvas" target = "_blank">Canvas</a></li>
+        <li><a href="https://drive.google.com/drive/my-drive" title = "MyDrive" target = "_blank">Drive</a></li>
+        <li><a href="https://www.calculator.net/" title ="Basic calculator">Caclulator</a></li>
+    </ul>
+  
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  
+    <hr>
+    <article id = "About"><!--Article seperates portion of webpage similar to div or section, id creates unique pointer to this which is used in the internal link above-->
+      <h4><a href = "info.html" title = "About Page">About Me</a></h4><!--Relative link and Title-->
+    </article>
+  </body>
+</html>

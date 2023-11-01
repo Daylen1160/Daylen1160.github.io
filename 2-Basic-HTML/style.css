@@ -1,0 +1,36 @@
+/* CSS files add styling rules to your content */
+
+body { 
+  margin: 3em; /*margin, 3x the font size (em) */
+  padding: 3px; /*3 pixels*/
+  background-image: url("https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg?w=996&t=st=1696958768~exp=1696959368~hmac=3d4685115d06df9fe1c480060bafc279ca725f282d50188f676ae1c32c15a63c");/*url to image of background*/
+}
+
+h1 {
+  font-family: Georgia, serif;/*font type*/
+  font-weight: bolder;/*font attributes*/
+  font-size: 50px;/*font size*/
+  text-align: center;/*where text is on screen*/
+  text-shadow: 4px 4px 7px #6f61f2;/*shadow behind text*/
+  color: #633cd6;/*color of text*/
+}
+
+p {
+  font-weight: bold; /*font attributes*/
+  font-size: 16px;  /*font size*/
+  color: #c6bcf5; /*color of text*/
+}
+
+ol {
+  color: #e5c5f0;/*color of text*/
+  font-family: "Gill Sans", sans-serif;/*font type*/
+}
+
+ul {
+  color: #2fba67;/*color of text*/
+}
+
+h2 {
+  color:red;/*when you look in the html file, the color for h2 is set to a blue like color, and it remains
+  that way because of cascading, where external css is below internal css in priority/hiearchy */
+}

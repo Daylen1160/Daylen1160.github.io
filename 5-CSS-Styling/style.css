@@ -1,0 +1,132 @@
+
+/* Set default font, background gradient, and remove margin/padding for the entire webpage */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #8cf9fd, #7dffa4);
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a max-width for the main container and provide margin and padding */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Styling for h1 headers, including background color, padding, rounded corners, font properties */
+h1 {
+    background-color: #d690ff; 
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Arial Black', sans-serif; 
+    font-size: 3rem;  
+}
+
+
+/* Styling for the entire navbar. Set background color and width */
+.navbar {
+    background-color: #d772df;
+    width: 100%;
+}
+
+/* Styling for individual navbar items, including text color, flexbox properties, etc. */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/* Set a hover effect for navbar items, changing the background color */
+.navbar a:hover {
+    background-color: #9b0fa5;
+}
+
+
+/* Add a dimming effect to images in the carousel */
+.dimmed-image {
+    filter: brightness(50%);
+}
+
+/* Styling for carousel captions including background, rounded corners, padding, and font */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Georgia', serif; 
+}
+
+/* Add rounded corners to the carousel's inner container */
+.carousel-inner {
+    border-radius: 5px;
+}
+
+/* Reviews Section Styling */
+
+/* Set up a flexbox container for reviews, define background, padding, rounded corners, etc. */
+.reviews {
+    display: flex; 
+    justify-content: space-between;
+    background-color: #30e3ca;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Define styling for individual reviews inside the flexbox container */
+.review {
+    flex: 1; 
+    margin: 0 10px;
+}
+
+/* Styling for blockquote elements with background, padding, and rounded corners */
+blockquote {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+
+/* Set styles for the footer, including background, text alignment, padding, border, etc. */
+footer {
+    background-color: #30e3ca;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: white;
+    border-top: 5px solid #28af9f;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+/* Styling for an 'info' class with background, padding, rounded corners, color, etc. */
+.info {
+    background-color: #30e3ca;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Button styling with background, color, padding, no border, rounded corners, and cursor */
+.btn {
+    background-color: #28af9f; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Hover effect for buttons, changing the background color */
+.btn:hover {
+    background-color: #207d72;
+}

@@ -1,0 +1,71 @@
+/* CSS files add styling rules to your content */
+
+body {
+    /* Body */
+    margin: 3em; /* margin, 3x the font size (em) */
+    padding: 3px; /* 3 pixels */
+    background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/frozen-lake_KCFLM4XHWT.jpg"); /* url to image of background */
+    background-size: cover; /* Size of background image */
+    background-position: top; /* position of background */
+    background-repeat: no-repeat; /* background doesn't repeat based on size */
+}
+
+h1 {
+    /* Header 1 tag */
+    font-family: 'Courier New', Courier, monospace; /* font type */
+    font-weight: bolder; /* font attributes */
+    font-size: 50px; /* font size */
+    text-align: center; /* where text is on screen */
+    text-shadow: 3px 3px 1px #97cefa; /* shadow behind text */
+    color: #3c83ee; /* color of text */
+}
+
+.tokyonight {
+    /* adjusting size of image */
+    width: 30%; /* width of the image */
+    height: 30%; /* height of the image */
+}
+
+li {
+    list-style-type: none; /* list style */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* font type */
+    font-style: italic; /* font attributes */
+    font-size: 20px; /* font size */
+    color: #1a33c4; /* color of text */
+
+}
+
+img {
+    margin: 20px; /* margin at the top */
+    border-style: dotted; /*border shape/style */
+    border-color: #3c83ee; /* border color */
+    border-width: 3px; /*border width*/
+    border-radius: 0%; /*border radius*/
+}
+
+video {
+    margin: 20px; /* margin at the top */
+    border-style: dotted; /*border shape/style */
+    border-color: #3c83ee; /* border color */
+    border-width: 3px; /*border width*/
+    border-radius: 0%; /*border radius*/
+}
+
+audio {
+    margin: 20px; /* margin at the top */
+    border-style: dotted; /*border shape/style */
+    border-color: #3c83ee; /* border color */
+    border-width: 3px; /*border width*/
+    border-radius: 0%; /*border radius*/
+}
+
+li::before {
+    /* what comes before the list item */
+    content: "";
+    display: inline-block;
+    width: 40px; /* width of the image */
+    height: 40px; /* height of the image */
+    background-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/star-512.png"); /* image itself */
+    background-size: contain; /* size of image, covers background to max size */
+    margin-right: 10px; /* spacing between the list item marker and the image */
+}

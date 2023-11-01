@@ -1,0 +1,42 @@
+/* CSS files add styling rules to your content */
+
+body { /*Body*/
+  margin: 3em; /*margin, 3x the font size (em) */
+  padding: 3px; /*3 pixels*/
+  background-image: url("https://media.istockphoto.com/id/477413150/photo/empty-wooden-table-and-modern-library-background-product-displa.jpg?s=612x612&w=0&k=20&c=thzXWR9lPGFiTkM0Y2jRh3sRA3cuES9En0anIHIsPBY=");/*url to image of background*/
+}
+
+h1 { /*Header 1 tag*/
+  font-family: Georgia, serif;/*font type*/
+  font-weight: bolder;/*font attributes*/
+  font-size: 50px;/*font size*/
+  text-align: center;/*where text is on screen*/
+  text-shadow: 4px 4px 7px #6f61f2;/*shadow behind text*/
+  color: #633cd6;/*color of text*/
+}
+
+li { /*List tag*/
+  list-style-type: square; /*Type of point in list*/
+  font-weight: bold; /*font attributes*/
+  font-size: 40px;  /*font size*/
+  color: #4141f0; /*color of text*/
+  margin: 0 10px; /* Add some space between the links */
+}
+
+hr { /*Horizontal rule tag*/
+  border: 0;
+  height: 1000px;
+}
+
+a:visited { /*Link tag when already clicked on*/
+  color: purple;
+}
+
+a:hover{ /*Link tag when hovered over*/
+  color: red;
+}
+
+a:link { /*Link tag normally*/
+  color: blue;
+}
+

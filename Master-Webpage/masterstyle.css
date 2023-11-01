@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgb(127, 229, 255), white, rgb(85, 117, 255));
+    text-align: center;
+    height: 100vh; /* This makes sure your body covers the full view height */
+    margin: 0; /* To remove any default margin */
+    background: linear-gradient(to bottom, rgb(255, 255, 187), rgb(140, 201, 241)); /* Gradient from yellow at the top to blue at the bottom */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This will make sure your background stays in place even when you scroll */
+}
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.profile-picture {
+    border: 2px solid rgb(54, 54, 54); /* This adds a black border */
+    width: 400px; /* Adjust this value to make the image bigger or smaller */
+    height: auto; /* This maintains the aspect ratio of the image */
+    display: block; /* This helps in centering the image if needed */
+    margin: 0 auto; /* This centers the image horizontally */
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
