@@ -1,0 +1,74 @@
+body {
+    font-family: "Brush Script MT", Cursive;
+    background: url('background.png') no-repeat center center fixed; 
+    background-size: cover;
+    color: white;
+}
+
+body::before {
+    content: ''; /*Empty string*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    z-index: -1; /*Stacks element UNDER*/
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/*Makes image scalable*/
+img {
+    width: 40%;
+    height: auto;
+}
+
+/*For navigation bar (at the top)*/
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Each section */
+section {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Tables */
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Lists*/
+li {
+    text-align: center;
+    list-style-position: inside;
+    margin: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

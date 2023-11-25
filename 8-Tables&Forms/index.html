@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="../Master-Webpage/masterindex.html">Back to Master Webpage</a>
+    <!--Ignore this, but this goes to a webpage with all the assignments-->
+    <a href="../Master-Webpage/masterindex.html">Back to Master Webpage</a>
+
+    <!--Header-->
+    <h1>Extremely Difficult Quiz</h1>
+
+    <!--Ordered list, representing each question-->
+    <ol>
+        <li>Fill in every square in the tic tac toe grid</li>
+            <table id="gameBoard">
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+            </table>
+        <li>Select all muffins:</li>
+            <table id = "captcha">
+                <tr>
+                    <td class="image"><img src = "dog1.png"></td>
+                    <td class="image"><img src = "dog3.png"></td>
+                    <td class="image"><img src = "muffin2.png"></td>
+                </tr>
+                <tr>
+                    <td class="image"><img src = "muffin1.png"></td>
+                    <td class="image"><img src = "muffin3.png"></td>
+                    <td class="image"><img src = "dog2.png"></td>
+                </tr>
+                <tr>
+                    <td class="image"><img src = "dog4.png"></td>
+                    <td class="image"><img src = "muffin4.png"></td>
+                    <td class="image"><img src = "muffin5.png"></td>
+                </tr>
+            </table>
+        
+        <li>Select all prime numbers when added together</li>
+        <table id="prime">
+            <tr>
+                <th rowspan="2" colspan="2"></th>
+                <th colspan="6">x</th>
+            </tr>
+            <tr>
+                <td class="number">1</td>
+                <td class="number">2</td>
+                <td class="number">3</td>
+                <td class="number">4</td>
+                <td class="number">5</td>
+                <td class="number">6</td>
+            </tr>
+        
+            <!-- y = 1 Row -->
+            <tr>
+                <th rowspan="6" class="rotate">y</th>
+                <td class="number">1</td>
+                <td class="option" data-x="1" data-y="1"></td>
+                <td class="option" data-x="2" data-y="1"></td>
+                <td class="option" data-x="3" data-y="1"></td>
+                <td class="option" data-x="4" data-y="1"></td>
+                <td class="option" data-x="5" data-y="1"></td>
+                <td class="option" data-x="6" data-y="1"></td>
+            </tr>
+        
+            <!-- y = 2 Row -->
+            <tr>
+                <td class="number">2</td>
+                <td class="option" data-x="1" data-y="2"></td>
+                <td class="option" data-x="2" data-y="2"></td>
+                <td class="option" data-x="3" data-y="2"></td>
+                <td class="option" data-x="4" data-y="2"></td>
+                <td class="option" data-x="5" data-y="2"></td>
+                <td class="option" data-x="6" data-y="2"></td>
+            </tr>
+        
+            <!-- y = 3 Row -->
+            <tr>
+                <td class="number">3</td>
+                <td class="option" data-x="1" data-y="3"></td>
+                <td class="option" data-x="2" data-y="3"></td>
+                <td class="option" data-x="3" data-y="3"></td>
+                <td class="option" data-x="4" data-y="3"></td>
+                <td class="option" data-x="5" data-y="3"></td>
+                <td class="option" data-x="6" data-y="3"></td>
+            </tr>
+        
+            <!-- y = 4 Row -->
+            <tr>
+                <td class="number">4</td>
+                <td class="option" data-x="1" data-y="4"></td>
+                <td class="option" data-x="2" data-y="4"></td>
+                <td class="option" data-x="3" data-y="4"></td>
+                <td class="option" data-x="4" data-y="4"></td>
+                <td class="option" data-x="5" data-y="4"></td>
+                <td class="option" data-x="6" data-y="4"></td>
+            </tr>
+        
+            <!-- y = 5 Row -->
+            <tr>
+                <td class="number">5</td>
+                <td class="option" data-x="1" data-y="5"></td>
+                <td class="option" data-x="2" data-y="5"></td>
+                <td class="option" data-x="3" data-y="5"></td>
+                <td class="option" data-x="4" data-y="5"></td>
+                <td class="option" data-x="5" data-y="5"></td>
+                <td class="option" data-x="6" data-y="5"></td>
+            </tr>
+        
+            <!-- y = 6 Row -->
+            <tr>
+                <td class="number">6</td>
+                <td class="option" data-x="1" data-y="6"></td>
+                <td class="option" data-x="2" data-y="6"></td>
+                <td class="option" data-x="3" data-y="6"></td>
+                <td class="option" data-x="4" data-y="6"></td>
+                <td class="option" data-x="5" data-y="6"></td>
+                <td class="option" data-x="6" data-y="6"></td>
+            </tr>
+        </table>
+
+        <!-- Input Form/Text Box Question -->
+        <li>
+            <label for="binaryInput">What number is represented by the binary code: 10110?</label>
+            <input type="text" id="binaryInput" name="binaryInput">
+        </li>
+
+        <!-- Checkbox Question -->
+        <li>
+            <label>Which of the following elements are nonmetals?</label><br>
+            <input type="checkbox" id="aluminum" name="element" value="aluminum">
+            <label for="neon">Aluminum</label><br>
+            <input type="checkbox" id="silicon" name="element" value="silicon">
+            <label for="silicon">Silicon</label><br>
+            <input type="checkbox" id="barium" name="element" value="barium">
+            <label for="neon">Barium</label><br>
+            <input type="checkbox" id="potassium" name="element" value="potassium">
+            <label for="neon">Potassium</label><br>
+            <input type="checkbox" id="neon" name="element" value="neon">
+            <label for="neon">Neon</label><br>
+            <input type="checkbox" id="iron" name="element" value="iron">
+            <label for="neon">Iron</label><br>
+        </li>
+
+        <!-- Pull-down/Dropdown Question -->
+        <li>
+            <label for="eulersNumber">What is Euler's number closest to, rounded to the nearest whole number?</label>
+            <select id="eulersNumber" name="eulersNumber">
+                <option value="-1">-1</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </li>
+
+        <!-- Prefilled Entries Question -->
+        <li>
+            <label for="independenceYear">When was the Declaration of Independence signed?</label>
+            <select id="independenceYear" name="independenceYear">
+                <option value="1770">1770</option>
+                <option value="1783">1783</option>
+                <option value="1698">1698</option>
+                <option value="1776">1776</option>
+                <option value="1934">1934</option>
+            </select>
+        </li>
+
+     
+        <!--Submit button-->
+        <input type="button" value="Submit Quiz" onclick="calculateScore()" class="submit-quiz"></input>
+        
+    </ol>
+    <script src="script.js"></script>
+</body>
+</html>

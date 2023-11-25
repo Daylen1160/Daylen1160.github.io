@@ -1,0 +1,171 @@
+/*Applies to everything in body*/
+body {
+    font-family: Arial, sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    background-color: rgba(255, 17, 17, 0.192);
+}
+
+/*To anchor elements*/
+a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+/*Header 1 at the top*/
+h1 {
+    text-align: center;
+    margin-top: 20px; /* Adjust this value as needed */
+    font-family: 'Arial', sans-serif; /*Sets the font family*/
+    font-size: 4em; /*Sets the size of the font*/
+    font-weight: bold; /* Makes font bold */
+    margin-top: 20px; /* Adds space on top of heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+    letter-spacing: 1.5px; /*Spacing between letters*/
+    text-shadow: 3px 3px 10px rgba(250, 100, 100, 0.8); /* Adds a subtle shadow to the text */
+    color: rgb(255, 0, 0);
+    margin: 50px;
+
+}
+
+/*Each element in the list*/
+li {
+    text-align: center;
+    list-style-position: inside;
+    margin: 20px;
+    font-family: Calibri;
+    font-size: 1.5em;
+}
+
+
+/*Question 1*/
+#gameBoard {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+}
+
+.cell {
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.cell:empty:hover {
+    background-color: #f4f4f4;
+}
+
+
+/*Question 2*/
+#captcha {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 300px;
+        border-collapse: collapse;
+}
+
+.image {
+    border: 1px solid #000;
+    border-spacing: 2px;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.image img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*Transition from selected to unselected and vice versa*/
+    width: 100%; /* Make the image fill the cell */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image img:hover {
+    transform: scale(1.1); /*hovering over the image*/
+}
+
+.image.selected img {
+    transform: scale(0.8); /* Shrink the image a bit to show it's selected*/
+    box-shadow: 0 0 15px rgba(59, 59, 59, 0.7); /* Gray shadow */
+}
+
+.image.unselected img {
+    transform: scale(1); /*Make the image a bit bigger when it's unselected*/
+}
+
+
+/*Question 3*/
+
+#prime {
+    border-collapse: collapse;
+    border-spacing: 5px;
+    margin: auto auto;
+}
+.number, .option, th {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    width: 10%;
+    height: 10%
+}
+
+
+.option .rotate {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding: 20px 20px;
+}
+
+.option:empty:hover {
+    background-color: #f4f4f4; 
+}
+
+.option.selected:hover {
+    background-color: rgb(223, 255, 228);
+}
+
+.option.selected {
+    background-color: rgb(171, 255, 183);
+}
+
+/*Submit button*/
+
+.submit-quiz {
+    --bg: #e74c3c;
+    --text-color: #fff;
+    position: relative;
+    width: 150px;
+    border: none;
+    background: var(--bg);
+    color: var(--text-color);
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 5px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
+}
+
+.submit-quiz:hover {
+    opacity: 1;
+}
+
+.submit-quiz:active {
+    top: 4px;
+    box-shadow: #c0392b 0px 3px 2px,#000 0px 3px 5px;
+}

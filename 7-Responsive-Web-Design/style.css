@@ -1,0 +1,69 @@
+body {
+  background-color:rgba(100, 137, 255, 0.315)
+}
+
+/*NOTE: For text size, em ensures that size is proportional to device/screen size*/
+header {
+  text-align: center; /*Centers text*/
+  color: rgb(0, 81, 255);
+  font-family: 'Arial', sans-serif; /*Sets the font family*/
+  font-size: 4em; /*Sets the size of the font*/
+  font-weight: bold; /* Makes font bold */
+  margin-top: 20px; /* Adds space on top of heading */
+  margin-bottom: 20px; /* Adds space below the heading */
+  text-transform: uppercase; /*Makes characters uppercase*/
+  letter-spacing: 1.5px; /* Space between characters*/
+  text-shadow: 3px 3px 7px rgba(0, 132, 255, 0.8); /* Adds a subtle shadow to the text */
+  padding: 10px 0; /*Spacing inside the element*/
+}
+
+p {
+  font-family:'Gill Sans', Calibri; /*font*/
+  text-align: center; /*Centers text*/
+  font-size: 1.25em; /*text size*/
+}
+
+/*Uses features like % signs and "fr" instead to account for different device sizes, allows images and grid to be proportional*/
+.grid-container {
+  display: grid; /*Specifices this is a grid*/
+  gap: 1%; /*Gap between each element*/
+  background-color: rgb(103, 138, 255); /*Background color*/
+  padding: 1%; /*Spacing of grid*/
+  grid-template-columns: 1.75fr 1fr 1.25fr; /* Three equal columns */
+  grid-template-rows: auto auto auto; /* Three rows, size according to content */
+}
+
+.grid-item {
+  background-color: rgba(193, 176, 255, 0.8);/*Background color*/
+  text-align: center; /*Text is in center of each element*/
+  padding: 20%; /*Spacing inside the element*/
+  background-size: cover; /*Ensures image covers entire container*/
+  background-position: center; /*Image is centered*/
+}
+
+/*Specifices column, row, and size of box/element*/
+/*grid-area: start row, start column, end row, end column*/
+.item1 {
+  grid-area: 1 / 1 / 3 / 2;
+  background-image: url('image1.png');
+}
+
+.item2 {
+  grid-area: 1 / 3 / 4 / 4;
+  background-image: url('image3.png');
+}
+
+.item3 {
+  grid-area: 3 / 1 / 4 / 2;
+  background-image: url('image2.png');
+}
+
+.item4 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-image: url('image4.png');
+}
+
+.item5 {
+  grid-area: 2 / 2 / 4 / 3; /* Adjusted to span one more row down */
+  background-image: url('image5.png');
+}
