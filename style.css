@@ -1,59 +1,154 @@
-body {
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, rgb(127, 229, 255), white, rgb(85, 117, 255));
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #121212;
+    line-height: 1.6;
+}
+
+.main-header {
     text-align: center;
-    height: 100vh; /* This makes sure your body covers the full view height */
-    margin: 0; /* To remove any default margin */
-    background: linear-gradient(to bottom, rgb(255, 255, 187), rgb(140, 201, 241)); /* Gradient from yellow at the top to blue at the bottom */
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* This will make sure your background stays in place even when you scroll */
+    padding: 40px 20px;
 }
 
-header {
-    padding: 20px;
+.banner {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(248, 65, 65, 0.19);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
+.expertise-tag, .contact-tag {
+    background: #333;
+    padding: 5px 10px;
 }
 
-.content {
-    margin-top: 50px;
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 20px;
 }
 
-.profile-picture {
-    border: 2px solid rgb(54, 54, 54); /* This adds a black border */
-    width: 400px; /* Adjust this value to make the image bigger or smaller */
-    height: auto; /* This maintains the aspect ratio of the image */
-    display: block; /* This helps in centering the image if needed */
-    margin: 0 auto; /* This centers the image horizontally */
+.text-content h1 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 4em;
+    letter-spacing: 2px;
+    word-spacing: 0.2px;
+    color: #FFFFFF;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+}
+
+.text-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2em;
+}
+
+.buttons {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.action-buttons {
+    border: none;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    transition: transform 0.1s ease; 
+    border-radius: .75em;
+}
+
+.action-buttons img {
+    width: 100%;
+    height: auto; 
+    border-radius: inherit;
+}
+
+.action-buttons:hover {
+    cursor: pointer;
+    transform: translateY(-0.33em); 
+    box-shadow: 4px 4px 8px 1px rgba(255, 255, 255, 0.2);
+}
+
+.action-buttons:active {
+    transform: translateY(0); 
+}
+
+.image-content .profile-picture {
+    width: 45%;
+    height: auto;
+    border-radius: 50%; 
+    box-shadow: 5px 5px 7px 10px rgba(34, 156, 255, 0.5), -5px -5px 7px 10px rgba(102, 16, 214, 0.5);
 }
 
 
-ul {
+.coursework {
+    background-color: #1f1f1f;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    text-align: left;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.coursework-header {
+    padding-bottom: 20px;
+}
+
+.course-list {
     list-style: none;
     padding: 0;
+    text-align: left; 
 }
 
-ul li {
-    font-size: 1.5em;
-    margin: 10px 0;
+.course-list li {
+    background: #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
 }
 
-ul li a {
+.course-list li a {
+    color: #4CAF50; /* Green text for links */
     text-decoration: none;
-    color: black;
+    display: block; /* Make the link fill the entire list item for easier clicking */
+    padding: 10px; /* Initial padding */
+    transition: color 0.3s ease, padding-left 0.3s ease; /* Transition for color and padding-left */
 }
 
-ul li a:hover {
-    text-decoration: underline;
+.course-list li a:hover {
+    color: #367c39; /* Darker green on hover */
+    padding-left: 30px; /* Increase padding to make the text move to the right */
 }
 
-footer {
-    margin-top: 50px;
+
+.main-footer {
+    background-color: #333;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.main-footer a {
+    color: #4CAF50;
+    text-decoration: none;
 }

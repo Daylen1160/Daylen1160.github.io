@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Account</h1>
+    </header>
+    <nav class="custom-navbar">
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="account.html">Account</a>
+        <a class="nav-item" href="communities.html">Communities</a>
+        <a class="nav-item" href="about.html">About</a>
+    </nav>
+    <div class="content">
+        <div class="account-container">
+            <div id="accountForms" class="account-forms">
+                <div class="account-create">
+                    <h2>Create Account</h2>
+                    <form id="createAccountForm">
+                        <input type="text" id="createName" placeholder="Full Name" required />
+                        <input type="text" id="createAddress" placeholder="Address" required />
+                        <input type="date" id="createBirthday" placeholder="Birthday" required />
+                        <input type="text" id="createCardNumber" placeholder="Credit Card Number" required />
+                        <input type="text" id="createCVV" placeholder="CVV" required />
+                        <input type="month" id="createExpDate" placeholder="Expiration Date" required />
+                        <input type="password" id="createPassword" placeholder="Password" required />
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+                        <button type="submit">Create</button>
+                    </form>
+                </div>
+                <div class="account-login">
+                    <h2>Login</h2>
+                    <form id="loginForm">
+                        <input type="text" id="loginName" placeholder="Name" required />
+                        <input type="password" id="loginPassword" placeholder="Password" required />
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+            <button id="logoutButton" style="display: none;">Logout</button>
+        </div>
+        <div id="experienceBar">
+            <div id="currentExperience"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: auto;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -2;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+
+header {
+    text-align: center;
+    margin: 20px;
+    font-size: 2.5em; 
+}
+
+header, a, p, li, h1, h2, h3, h4, h5, h6{
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.custom-navbar {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.custom-navbar .nav-item {
+    padding: 0.5rem 1rem;
+    font-size: 1.5em; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.custom-navbar .nav-item:hover,
+.custom-navbar .nav-item:focus,
+.custom-navbar .nav-item.active {
+    color: #0275d8;
+}
+
+
+.content {
+    padding: 40px;
+}
+
+
+.carousel-inner img {
+    object-fit: contain;
+    max-height: 500px;
+}
+
+
+.features-list {
+    list-style: disc;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.features-list li {
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+
+#reviews {
+    text-align: center;
+    padding: 20px;
+}
+
+#reviews h3 {
+    margin-bottom: 20px;
+}
+
+#reviews ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#reviews li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.review {
+   
+    padding: 10px;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+
+
+.account-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.account-forms {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.account-create, .account-login {
+    flex-basis: 48%;
+}
+
+.account-create h2, .account-login h2 {
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="date"],
+form input[type="month"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #0275d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0462b4;
+}
+
+#experienceBar {
+    background-color: #ddd;
+    height: 20px;
+    width: 80%;
+    position: relative;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#currentExperience {
+    background-color: #0275d8;
+    height: 100%;
+    width: 80%;
+}
+
+
+
+#communityList {
+    overflow-y: scroll;
+    max-height: 400px;
+    cursor: pointer;
+}
+
+
+#communitySearch {
+    padding: 10px;
+    width: 50%;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+
+.community-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.community-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.community-item:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.community-details {
+    margin-left: 10px;
+}
+
+.community-name {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.member-count {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.community-description {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+
+
+#searchButton, #filterButton, form button, #logoutButton {
+    cursor: pointer;
+    background-color: #0275d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+#searchButton:hover, #filterButton:hover, form button:hover, #logoutButton:hover {
+    background-color: #0462b4;
+}
+
+
+#searchButton img, #filterButton img {
+    margin-right: 8px;
+    width: 16px;
+    height: auto;
+}
+
+
+.popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+

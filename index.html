@@ -7,15 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to my website!</h1>
+    <header class="main-header">
+        <div class="banner">
+            <p class="expertise-tag">Student at Mountain View High School - Aspiring Computer Engineer - Undergraduate Researcher</p>
+        </div>
+        <div class="profile-section">
+            <div class="text-content">
+                <h1>Welcome to my website!</h1>
+                <h2>Learning Front-End Development</h2>
+                <p>Hey I'm Daylen! I currently attend Mountain View High School as a senior, and aspire to be a future computer engineer. <br>I've dove into topics such as computer
+                    science, different facets of engineering, artifical intelligence, robotics, front end development, and more. I enjoy playing basketball and gaming with my
+                    friends.
+                </p>
+                <div class="buttons">
+                    <button class="action-buttons" id = "linkedin-button">
+                        <img src="linkedin.png" alt="LinkedIn Profile" />
+                    </button>
+
+                    <button class="action-buttons" id = "instagram-button">
+                        <img src="instagram.png" alt="Instagram Profile" />
+                    </button>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="profile.jpg" alt="Your Picture" class="profile-picture">
+            </div>
+        </div>
     </header>
 
-    <section class="content">
-        <img src="profile.jpg" alt="Your Picture" class="profile-picture">
-
-        <h2>DeAnza Coursework</h2>
-        <ul>
+    <section class="coursework">
+        <div class = "coursework-header">
+            <h2>DeAnza Coursework</h2>
+        </div>
+        <ul class="course-list">
             <li><a href="../1-Coding-Project/index.html">Introduction to Coding</a></li>
             <li><a href="../2-Basic-HTML/index.html">Basic HTML</a></li>
             <li><a href="../3-Working-With-Links/index.html">Working With Links</a></li>
@@ -25,13 +49,12 @@
             <li><a href="../7-Responsive-Web-Design/">Responsive Web Design</a></li>
             <li><a href="../8-Tables&Forms/">Tables & Forms</a></li>
             <li><a href="../9-Revisit-Basics/">Revisit Basics</a></li>
+            <li><a href="../10-Final-Project/">Final Project</a></li>
         </ul>
-
-        
     </section>
 
-    <footer>
-        <p>Contact Information: daylen924@gmail.com | 650-248-9329</p>
+    <footer class="main-footer">
+        <p>Contact Information: <a href="mailto:daylen924@gmail.com">daylen924@gmail.com</a> | 650-248-9329</p>
     </footer>
 
     <script src="script.js"></script>
