@@ -129,16 +129,16 @@ body {
 }
 
 .course-list li a {
-    color: #4CAF50; /* Green text for links */
+    color: #4CAF50;
     text-decoration: none;
-    display: block; /* Make the link fill the entire list item for easier clicking */
-    padding: 10px; /* Initial padding */
-    transition: color 0.3s ease, padding-left 0.3s ease; /* Transition for color and padding-left */
+    display: block;
+    padding: 10px;
+    transition: color 0.3s ease, padding-left 0.3s ease;
 }
 
 .course-list li a:hover {
-    color: #367c39; /* Darker green on hover */
-    padding-left: 30px; /* Increase padding to make the text move to the right */
+    color: #367c39;
+    padding-left: 30px;
 }
 
 
