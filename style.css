@@ -100,6 +100,8 @@ body {
 }
 
 
+/**/
+
 .coursework {
     background-color: #1f1f1f;
     padding: 40px;
@@ -141,6 +143,50 @@ body {
     padding-left: 30px;
 }
 
+/**/
+
+.other-projects {
+    background-color: #1f1f1f;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    text-align: left;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.other-projects-header {
+    padding-bottom: 20px;
+}
+
+.other-projects-list {
+    list-style: none;
+    padding: 0;
+    text-align: left; 
+}
+
+.other-projects-list li {
+    background: #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.other-projects li a {
+    color: #12977a;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.other-projects li a:hover {
+    color: #0d7760;
+    padding-left: 30px;
+}
+
+/**/
 
 .main-footer {
     background-color: #333;
