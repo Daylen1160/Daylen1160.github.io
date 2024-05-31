@@ -14,7 +14,7 @@ header {
 .container {
     width: 60%;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 8px;
 }
@@ -42,4 +42,20 @@ header {
 
 .person:last-child {
     border-bottom: none;
+}
+
+.nav-item {
+    font-size: 200%;
+  
+    background: linear-gradient(to right, #000000, #ff0000); /* Gradient background */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-decoration: none;   
+}
+
+.nav-item:hover {
+    background: linear-gradient(to right, #000000, #8400ff); /* Gradient background */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-decoration: none;  
 }
