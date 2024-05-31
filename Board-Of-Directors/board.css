@@ -8,9 +8,9 @@ body {
 }
 
 header {
-    padding-right: 7%;
+    padding-right: 5%;
     font-family: 'Dancing Script', cursive;
-    font-size: 200%;
+    font-size: 180%;
     letter-spacing: 5px;
     text-shadow: 5px 5px 10px rgba(194, 66, 245, 0.6);
 }
@@ -25,7 +25,7 @@ header {
 .person {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
